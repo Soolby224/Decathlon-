@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decathlon - Le sport commence là où tu es</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- =========================================
+        1. NAVBAR (Style Decathlon)
+        ========================================= -->
+    <header class="navbar">
+        <!-- Top bar - Réassurance -->
+        <div class="top-bar">
+            Retours offerts pendant 365 jours avec le compte Decathlon
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="header-content">
+                <!-- Logo & Mobile Menu Toggle -->
+                <div class="header-left">
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="#" class="logo">Decathlon</a>
+                </div>
+
+                <!-- Search Bar (Desktop) -->
+                <div class="search-container desktop-search">
+                    <input type="text" placeholder="Rechercher un produit, un sport..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Icons -->
+                <div class="header-icons">
+                    <button class="icon-btn desktop-only">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="icon-label">Magasin</span>
+                    </button>
+                    <button class="icon-btn desktop-only">
+                        <i class="fas fa-user"></i>
+                        <span class="icon-label">Connexion</span>
+                    </button>
+                    <button class="icon-btn cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-label desktop-only">Panier</span>
+                        <span class="cart-badge">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Search Bar (Mobile) -->
+            <div class="search-container mobile-search">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- Sub Navigation (Categories) -->
+            <nav class="sub-nav desktop-only">
+                <a href="#" class="nav-link">Tous les sports</a>
+                <a href="#" class="nav-link">Femme</a>
+                <a href="#" class="nav-link">Homme</a>
+                <a href="#" class="nav-link">Enfant</a>
+                <a href="#" class="nav-link sale-link">Bons plans</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <a href="#" class="mobile-nav-link">Tous les sports</a>
+            <a href="#" class="mobile-nav-link">Femme</a>
+            <a href="#" class="mobile-nav-link">Homme</a>
+            <a href="#" class="mobile-nav-link">Enfant</a>
+            <a href="#" class="mobile-nav-link">Bons plans</a>
+            <a href="#" class="mobile-nav-link"><i class="fas fa-map-marker-alt"></i> Magasin</a>
+            <a href="#" class="mobile-nav-link"><i class="fas fa-user"></i> Connexion</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- =========================================
+            2. HERO BANNER
+            ========================================= -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Le sport commence là où tu es.</h1>
+                <p class="hero-subtitle">
+                    Débutant, repreneur ou passionné : découvre des équipements accessibles, fiables et adaptés à ton niveau.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">S'équiper maintenant</button>
+                    <button class="btn-secondary">Découvrir les sports</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+            3. SECTION CIBLES : HOMME, FEMME, JUNIOR
+            ========================================= -->
+        <section class="targets-section">
+            <div class="container">
+                <h2 class="section-title">Pour qui cherchez-vous ?</h2>
+                
+                <div class="targets-grid">
+                    <!-- Carte Femme -->
+                    <a href="#" class="target-card">
+                        <div class="target-bg">
+                            <i class="fas fa-female target-icon"></i>
+                        </div>
+                        <div class="target-overlay">
+                            <div class="target-content">
+                                <h3 class="target-title">Femme</h3>
+                                <span class="target-arrow"><i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Carte Homme -->
+                    <a href="#" class="target-card">
+                        <div class="target-bg">
+                            <i class="fas fa-male target-icon"></i>
+                        </div>
+                        <div class="target-overlay">
+                            <div class="target-content">
+                                <h3 class="target-title">Homme</h3>
+                                <span class="target-arrow"><i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Carte Junior -->
+                    <a href="#" class="target-card">
+                        <div class="target-bg">
+                            <i class="fas fa-child target-icon"></i>
+                        </div>
+                        <div class="target-overlay">
+                            <div class="target-content">
+                                <h3 class="target-title">Enfant & Junior</h3>
+                                <span class="target-arrow"><i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+            4. CATÉGORIES SPORTS
+            ========================================= -->
+        <section class="sports-section">
+            <div class="container">
+                <h2 class="section-title">À chaque pratique, sa solution</h2>
+                
+                <div class="sports-grid">
+                    <div class="sport-card">
+                        <div class="sport-img">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3 class="sport-name">Running</h3>
+                        <button class="sport-btn">Découvrir</button>
+                    </div>
+                    <div class="sport-card">
+                        <div class="sport-img">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3 class="sport-name">Fitness & Musculation</h3>
+                        <button class="sport-btn">Découvrir</button>
+                    </div>
+                    <div class="sport-card">
+                        <div class="sport-img">
+                            <i class="fas fa-hiking"></i>
+                        </div>
+                        <h3 class="sport-name">Randonnée</h3>
+                        <button class="sport-btn">Découvrir</button>
+                    </div>
+                    <div class="sport-card">
+                        <div class="sport-img">
+                            <i class="fas fa-bicycle"></i>
+                        </div>
+                        <h3 class="sport-name">Cycle</h3>
+                        <button class="sport-btn">Découvrir</button>
+                    </div>
+                    <div class="sport-card">
+                        <div class="sport-img">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3 class="sport-name">Sports Collectifs</h3>
+                        <button class="sport-btn">Découvrir</button>
+                    </div>
+                    <div class="sport-card">
+                        <div class="sport-img">
+                            <i class="fas fa-swimmer"></i>
+                        </div>
+                        <h3 class="sport-name">Natation</h3>
+                        <button class="sport-btn">Découvrir</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+            5. PREUVE & PRODUITS
+            ========================================= -->
+        <section class="products-section">
+            <div class="container">
+                <div class="products-header">
+                    <h2 class="section-title">Faire du sport ne devrait jamais être compliqué.</h2>
+                    <p class="products-subtitle">
+                        Prix, choix, conseils : on lève tous les freins pour te permettre de bouger sans te ruiner, avec des produits qui ont fait leurs preuves sur le terrain.
+                    </p>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">T-shirt Run Dry</h3>
+                            <p class="product-desc">Conçu pour l'évacuation de la transpiration lors de vos courses.</p>
+                            <div class="product-price">6€</div>
+                            <button class="product-btn">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Chaussures Jogflow</h3>
+                            <p class="product-desc">Légèreté et amorti optimal pour tes premières sorties de course à pied.</p>
+                            <div class="product-price">35€</div>
+                            <button class="product-btn">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <i class="fas fa-square"></i>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Tapis de Fitness</h3>
+                            <p class="product-desc">Confort absolu et adhérence pour tes séances de gym à la maison.</p>
+                            <div class="product-price">15€</div>
+                            <button class="product-btn">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <i class="fas fa-umbrella"></i>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Veste Imperméable</h3>
+                            <p class="product-desc">Reste au sec lors de tes sorties nature grâce à son tissu déperlant.</p>
+                            <div class="product-price">25€</div>
+                            <button class="product-btn">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+            6. BANNIÈRES PERSONAS
+            ========================================= -->
+        <section class="personas-section">
+            <div class="container">
+                <h2 class="section-title">Quel que soit ton niveau, tu as ta place.</h2>
+
+                <div class="personas-list">
+                    <!-- Persona 1 -->
+                    <div class="persona-card">
+                        <div class="persona-content">
+                            <h3 class="persona-title">Tu débutes ?</h3>
+                            <p class="persona-desc">
+                                Commence à ton rythme, sans pression. Découvre nos essentiels confortables, faciles à utiliser et respectueux de ton budget.
+                            </p>
+                            <button class="persona-btn">Je commence le sport</button>
+                        </div>
+                        <div class="persona-img">
+                            <i class="fas fa-sports"></i>
+                        </div>
+                    </div>
+
+                    <!-- Persona 2 -->
+                    <div class="persona-card reverse">
+                        <div class="persona-content">
+                            <h3 class="persona-title">Tu pratiques régulièrement ?</h3>
+                            <p class="persona-desc">
+                                Progresse sereinement. Trouve un matériel fiable, testé sur le terrain et résistant pour tes entraînements de la semaine.
+                            </p>
+                            <button class="persona-btn">Je m'équipe pour progresser</button>
+                        </div>
+                        <div class="persona-img">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+            7. MESSAGE DE MARQUE & ENGAGEMENTS
+        ========================================= -->
+        <section class="brand-section">
+            <div class="container">
+                <div class="brand-content">
+                    <h2 class="brand-title">Le sport accessible à tous, ce n'est pas un slogan. C'est une promesse.</h2>
+                    <blockquote class="brand-quote">
+                        "Chez Decathlon, le sport n'est pas réservé aux experts. Il est fait pour tous ceux qui veulent bouger."
+                    </blockquote>
+                </div>
+
+                <div class="engagements-grid">
+                    <div class="engagement-card">
+                        <div class="engagement-icon">
+                            <i class="fas fa-euro-sign"></i>
+                        </div>
+                        <h3 class="engagement-title">Toujours accessible</h3>
+                        <p class="engagement-desc">Des prix justes toute l'année, pour que le budget ne soit jamais une excuse pour ne pas bouger.</p>
+                    </div>
+                    <div class="engagement-card">
+                        <div class="engagement-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="engagement-title">Produits fiables</h3>
+                        <p class="engagement-desc">Imaginés, conçus et testés par des passionnés de sport pour garantir leur qualité et durabilité.</p>
+                    </div>
+                    <div class="engagement-card">
+                        <div class="engagement-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="engagement-title">Choix simplifié</h3>
+                        <p class="engagement-desc">Des gammes claires et des conseils pertinents pour t'aider à trouver le bon produit instantanément.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+            8. RÉASSURANCE (Footer E-commerce)
+        ========================================= -->
+        <section class="reassurance">
+            <div class="container">
+                <div class="reassurance-grid">
+                    <div class="reassurance-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Livraison offerte dès 49€</span>
+                    </div>
+                    <div class="reassurance-item">
+                        <i class="fas fa-store"></i>
+                        <span>Retrait gratuit en magasin</span>
+                    </div>
+                    <div class="reassurance-item">
+                        <i class="fas fa-undo"></i>
+                        <span>Retours 365 jours</span>
+                    </div>
+                    <div class="reassurance-item">
+                        <i class="fas fa-shield-check"></i>
+                        <span>Garantie 2 ans minimum</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-logo">Decathlon</p>
+            <p class="footer-text">© 2026 Decathlon - Fictive Campaign Concept (HTML & CSS)</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
