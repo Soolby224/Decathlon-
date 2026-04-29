@@ -1,0 +1,29 @@
+/* Styles personnalisés pour compléter Tailwind */
+
+:root {
+    --brand-blue: #004ECC;
+}
+
+/* Animation douce pour les boutons */
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Style spécifique pour la barre de défilement (Scrollbar) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #004ECC;
+    border-radius: 10px;
+}
+
+/* Empêcher le débordement horizontal sur mobile */
+body {
+    overflow-x: hidden;
+}
