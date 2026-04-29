@@ -132,16 +132,18 @@ button {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 900;
-    letter-spacing: -0.05em;
-    color: var(--brand-blue);
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
 }
 
 @media (min-width: 768px) {
-    .logo {
-        font-size: 1.875rem;
+    .logo-img {
+        height: 50px;
     }
 }
 
@@ -1041,12 +1043,11 @@ button {
     text-align: center;
 }
 
-.footer-logo {
-    font-size: 1.875rem;
-    font-weight: 900;
-    letter-spacing: -0.05em;
-    text-transform: uppercase;
+.footer-logo-img {
+    height: 50px;
+    width: auto;
     margin-bottom: 1rem;
+    filter: brightness(0) invert(1);
 }
 
 .footer-text {
